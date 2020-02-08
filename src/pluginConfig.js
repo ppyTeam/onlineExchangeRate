@@ -8,12 +8,12 @@ module.exports.pluginLogo = 'assets/logo.png'
 module.exports.pluginEntryFile = 'calculator.html'
 
 // 插件搜索列表名称
-const pluginExplain = '在线货币计算器'
+const pluginExplain = '货币汇率计算器'
 module.exports.pluginExplain = pluginExplain
 
 // 插件功能正则部分列表
 module.exports.pluginFeaturesList = (() => {
-  const { isoMap } = require('./javascript/isoMap')
+  const { isoMap } = require('./ISO_META')
 
   return isoMap.map(({ name, scName }) => {
     const cmds = [{
@@ -39,3 +39,6 @@ module.exports.pluginFeaturesList = (() => {
     }
   })
 })()
+
+// 插件回调编号
+module.exports.cbId = 'F6EiNdyHx'
