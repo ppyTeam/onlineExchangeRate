@@ -1,0 +1,19 @@
+{
+	"pluginName": "onlineExchangeRate",
+    "description": "一个在线获取实时汇率信息的货币计算器",
+    "author": "quericy",
+    "homepage": "https://quericy.me",
+    "logo": "logo.png",
+	"main": "calculator.html",
+    "version": "0.0.3",
+    "pluginSetting":{
+        "single": true
+    },
+	"features": [
+	    {
+			"code": "moneyExchange",
+			"explain": "在线货币计算器",
+	        "cmds":["money", "CNY", "exchange", "货币", "汇率", "计算器", "huobi", "huilv", "jisuanqi"]
+	    }
+	]
+}
