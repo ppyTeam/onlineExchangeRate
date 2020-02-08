@@ -2,14 +2,17 @@
 
 ##### 描述
 
-一个在线获取实时汇率信息的货币计算器。
+一个在线货币计算器，实时获取最新汇率信息。
 
 数据和转换器来源于: [freecurrencyrates.com](https://freecurrencyrates.com/)
 
-##### 源码
+##### 源码和下载
+本工具为基于[uTools](https://u.tools/)的插件程序，可于uTools的`插件中心`中直接下载。
+也可于github仓库下载源码和release包。
+
 github: [ppyTeam/onlineExchangeRate](https://github.com/ppyTeam/onlineExchangeRate)
 
-需求/反馈可提issue。
+需求/反馈请提[issue](https://github.com/ppyTeam/onlineExchangeRate/issues)。
 
 ##### 功能预览
 
