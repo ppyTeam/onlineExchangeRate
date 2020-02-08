@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "name": "online-exchange-rate",
+  "version": "0.0.3",
+  "author": "quericy",
+  "contributors": [
+    "ttionya <git@ttionya.com>"
+  ],
+  "description": "一个在线获取实时汇率信息的货币计算器",
+  "homepage": "https://github.com/ppyTeam/onlineExchangeRate",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppyTeam/onlineExchangeRate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ppyTeam/onlineExchangeRate/issues"
+  },
+  "keywords": [
+    "utools",
+    "exchange",
+    "money"
+  ],
+  "scripts": {
+    "build": ""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "camel-case": "^4.1.1",
+    "ejs": "^3.0.1",
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^5.0.0",
+    "gulp-prettier": "^2.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rimraf": "^1.0.0"
+  },
+  "license": "GPL V3"
+}

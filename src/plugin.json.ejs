@@ -1,0 +1,31 @@
+<%- JSON.stringify({
+  pluginName,
+  description: pkg.description,
+  version: pkg.version,
+
+  author: pkg.author,
+  contributors: pkg.contributors,
+  homepage: data.homepage,
+
+  logo: data.pluginLogo,
+  main: data.pluginEntryFile,
+
+  pluginSetting: {
+    single: true
+  },
+
+  features: [
+    {
+      code: 'base',
+      explain: data.pluginExplain,
+      cmds: [
+        'money',
+        'exchange',
+        '货币',
+        '汇率',
+        '计算器'
+      ]
+    },
+    ...data.pluginFeaturesList
+  ]
+}, null, 2) %>
