@@ -21,7 +21,9 @@
     "money"
   ],
   "scripts": {
-    "build": ""
+    "clean": "gulp clean",
+    "build": "npm run clean && gulp",
+    "watch": "npm run clean && gulp watch"
   },
   "dependencies": {},
   "devDependencies": {

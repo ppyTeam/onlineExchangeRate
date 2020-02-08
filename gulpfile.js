@@ -12,8 +12,8 @@ const ejsConfig = require('./src/pluginConfig')
 /**
  * 移除 dist 文件夹
  */
-gulp.task('clean-dist', () => {
-  return gulp.src('./dist')
+gulp.task('clean', () => {
+  return gulp.src('./dist', { allowEmpty: true })
     .pipe(rimraf())
 })
 
@@ -36,3 +36,16 @@ gulp.task('render-ejs', () => {
     .pipe(gulp.dest('./dist'))
 })
 
+/**
+ * 拷贝无需渲染的文件
+ */
+gulp.task('copy', () => {
+  return gulp.src(['./src/**/*', '!./src/**/*.ejs'])
+    .pipe(gulp.dest('./dist'))
+})
+
+gulp.task('watch', () => {
+  gulp.watch(['./src/**'], gulp.parallel('render-ejs', 'copy'))
+})
+
+gulp.task('default', gulp.parallel('render-ejs', 'copy'))
