@@ -1,11 +1,9 @@
 const gcw_handlerF6EiNdyHx = {
   gennodes() {
-    this.nodes = []
-
     for (let i = 0; i < generator.getISOList().length; i++) {
       let $node = document.querySelector(`#gcw_valF6EiNdyHx${i}`)
       $node.rate = $node.getAttribute('rate')
-      this.nodes[i] = $node
+      nodes[i] = $node
     }
   },
 
@@ -34,19 +32,19 @@ const gcw_handlerF6EiNdyHx = {
   },
 
   update(index, self) {
-    if (!this.nodes) {
+    if (!nodes.length) {
       this.gennodes()
     }
 
-    console.log(this.nodes)
+    console.log(nodes)
 
     // 全部转为美元计算
-    const usd = this.parse(this.nodes[index].value) / this.nodes[index].rate
+    const usd = this.parse(nodes[index].value) / nodes[index].rate
     if (isNaN(usd)) return
 
     for (let i = 0; i < generator.getISOList().length; i++) {
       if (i !== index || self) {
-        this.nodes[i].value = this.format(this.nodes[i].rate * usd)
+        nodes[i].value = this.format(nodes[i].rate * usd)
       }
     }
   },
