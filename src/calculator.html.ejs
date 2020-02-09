@@ -17,6 +17,7 @@
 <script src="javascript/handler.js"></script>
 <script>
   let generator
+  let nodes = []
 
   // uTools 事件
   utools.onPluginEnter(({ code, type, payload }) => {
@@ -29,6 +30,7 @@
       generator.addISO(currentISO, targetISO)
     }
 
+    nodes = []
     loadConverter(parseAmount(amount))
 
     utools.setSubInput(({ text }) => {
@@ -68,11 +70,11 @@
 
   function parseAmount(amount) {
     amount = /([\d.]+)/.exec(amount)
-    console.log(amount)
+
     if (amount) {
       amount = amount[1]
     }
-console.log(amount)
+
     return parseFloat(amount) || 1
   }
 </script>
