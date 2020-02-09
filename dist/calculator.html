@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cn">
+  <head>
+    <meta charset="utf-8" />
+    <title>货币汇率计算器</title>
+    <link href="style/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- <div>使用 <code>add:<关键字></code> 增加新的转换币种</div> -->
+    <div id="gcw_mainF6EiNdyHx" class="gcw_mainF6EiNdyHx"></div>
+    <h4 id="gcw_tipsF6EiNdyHx"></h4>
+
+    <script src="ISO_META.js"></script>
+    <script src="javascript/tips.js"></script>
+    <script src="javascript/request.js"></script>
+    <script src="javascript/handler.js"></script>
+    <script>
+      let generator
+
+      // uTools 事件
+      utools.onPluginEnter(({ code, type, payload }) => {
+        generator = new Generator({
+          currentISO: code === 'base' ? 'CNY' : code,
+        })
+
+        const { currentISO, amount, targetISO } = formatPayload(payload)
+        if (code !== 'base') {
+          generator.addISO(currentISO, targetISO)
+        }
+
+        loadConverter(parseAmount(amount))
+
+        utools.setSubInput(({ text }) => {
+          self.command = text
+
+          updateInput(text)
+        }, `请输入${generator.getCurrentISOScName()}金额`)
+      })
+
+      /**
+       * 更新插件输入框
+       * @param {string} amount
+       */
+      function updateInput(amount) {
+        document.querySelector('#gcw_valF6EiNdyHx0').value = parseAmount(amount)
+        gcw_handlerF6EiNdyHx.update(0)
+      }
+
+      /**
+       * 格式化输入
+       * @param {string} payload
+       * @return {object}
+       */
+      function formatPayload(payload) {
+        const result = /^([^\d\s]+)?\s*([\d.]+)?\s*([^\d\s]+)?$/i.exec(payload)
+
+        if (!result) {
+          return {}
+        }
+
+        return {
+          currentISO: result[1],
+          amount: result[2],
+          targetISO: result[3],
+        }
+      }
+
+      function parseAmount(amount) {
+        amount = /([\d.]+)/.exec(amount)
+        console.log(amount)
+        if (amount) {
+          amount = amount[1]
+        }
+        console.log(amount)
+        return parseFloat(amount) || 1
+      }
+    </script>
+  </body>
+</html>

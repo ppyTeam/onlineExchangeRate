@@ -1,0 +1,141 @@
+{
+  "pluginName": "onlineExchangeRate",
+  "description": "一个在线获取实时汇率信息的货币计算器",
+  "version": "0.0.3",
+  "author": "quericy",
+  "contributors": ["ttionya <git@ttionya.com>"],
+  "homepage": "https://quericy.me",
+  "logo": "assets/logo.png",
+  "main": "calculator.html",
+  "pluginSetting": {
+    "single": true
+  },
+  "features": [
+    {
+      "code": "base",
+      "explain": "货币汇率计算器",
+      "cmds": ["money", "exchange", "货币", "汇率", "计算器"]
+    },
+    {
+      "code": "CNY",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "人民币汇率转换",
+          "match": "/^(CNY|RMB|中国元|人民币).*/i"
+        }
+      ]
+    },
+    {
+      "code": "USD",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "美元汇率转换",
+          "match": "/^(USD|美元).*/i"
+        }
+      ]
+    },
+    {
+      "code": "JPY",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "日元汇率转换",
+          "match": "/^(JPY|日元).*/i"
+        }
+      ]
+    },
+    {
+      "code": "KRW",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "韩元汇率转换",
+          "match": "/^(KRW|韩元).*/i"
+        }
+      ]
+    },
+    {
+      "code": "HKD",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "港币汇率转换",
+          "match": "/^(HKD|港币).*/i"
+        }
+      ]
+    },
+    {
+      "code": "TWD",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "新台币汇率转换",
+          "match": "/^(TWD|新台币).*/i"
+        }
+      ]
+    },
+    {
+      "code": "EUR",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "欧元汇率转换",
+          "match": "/^(EUR|欧元).*/i"
+        }
+      ]
+    },
+    {
+      "code": "GBP",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "英镑汇率转换",
+          "match": "/^(GBP|英镑).*/i"
+        }
+      ]
+    },
+    {
+      "code": "RUB",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "卢布汇率转换",
+          "match": "/^(RUB|卢布).*/i"
+        }
+      ]
+    },
+    {
+      "code": "AUD",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "澳元汇率转换",
+          "match": "/^(AUD|澳元).*/i"
+        }
+      ]
+    },
+    {
+      "code": "CAD",
+      "explain": "货币汇率计算器",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "加元汇率转换",
+          "match": "/^(CAD|加元).*/i"
+        }
+      ]
+    }
+  ]
+}

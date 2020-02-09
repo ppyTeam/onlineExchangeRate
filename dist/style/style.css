@@ -1,0 +1,24 @@
+/* 提示 */
+#gcw_tipsF6EiNdyHx {
+  display: none;
+  text-align: center;
+}
+#gcw_tipsF6EiNdyHx.show {
+  display: block;
+}
+
+/*
+ * 可以修改以下样式
+ * .gcw_mainF6EiNdyHx
+ * .gcw_headerF6EiNdyHx
+ * .gcw_ratesF6EiNdyHx
+ * .gcw_sourceF6EiNdyHx
+ */
+
+.gcw_ttlF6EiNdyHx {
+  width: 50% !important;
+}
+
+.gcw_valblockF6EiNdyHx {
+  width: 50% !important;
+}
