@@ -50,6 +50,8 @@ const gcw_handlerF6EiNdyHx = {
   },
 
   reload() {
-    loadConverter()
+    nodes = []
+
+    loadConverter(parseAmount(self.command))
   },
 }
