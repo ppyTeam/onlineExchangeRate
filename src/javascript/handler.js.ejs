@@ -45,6 +45,8 @@ const gcw_handler<%= data.cbId %> = {
   },
 
   reload() {
-    loadConverter()
+    nodes = []
+
+    loadConverter(parseAmount(self.command))
   }
 }
