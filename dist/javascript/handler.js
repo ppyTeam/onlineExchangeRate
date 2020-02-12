@@ -36,7 +36,7 @@ const gcw_handlerF6EiNdyHx = {
       this.gennodes()
     }
 
-    console.log(nodes)
+    //console.log(nodes)
 
     // 全部转为美元计算
     const usd = this.parse(nodes[index].value) / nodes[index].rate

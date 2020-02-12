@@ -62,7 +62,7 @@ class Generator {
         // do nothing
       } else {
         Object.entries(this.ISOMAPFULL).forEach(([key, value]) => {
-          console.log(key, value)
+          //console.log(key, value)
           if (key === targetISO || ~value.indexOf(targetISO)) {
             this.ISOList.push({
               name: key,

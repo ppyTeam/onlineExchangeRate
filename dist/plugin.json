@@ -1,7 +1,7 @@
 {
   "pluginName": "onlineExchangeRate",
   "description": "一个在线获取实时汇率信息的货币计算器",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "quericy",
   "contributors": ["ttionya <git@ttionya.com>"],
   "homepage": "https://quericy.me",
