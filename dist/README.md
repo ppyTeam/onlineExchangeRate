@@ -24,18 +24,18 @@ github: [ppyTeam/onlineExchangeRate](https://github.com/ppyTeam/onlineExchangeRa
 
 - [x] 多关键词识别:
 
-  | 待转换币种 | uTools关键词(不区分大小写) |
-  | ---------- | -------------------------- |
-  | 人民币     | CNY、RMB、中国元、人民币   |
-  | 美元       | USD、美元                  |
-  | 日元       | JPY、日元                  |
-  | 韩元       | KRW、韩元                  |
-  | 港币       | HKD、港币                  |
-  | 新台币     | TWD、新台币                |
-  | 欧元       | EUR、欧元                  |
-  | 英镑       | GBP、英镑                  |
-  | 卢布       | RUB、卢布                  |
-  | 澳元       | AUD、澳元                  |
+| 待转换币种 | uTools关键词(不区分大小写) |
+| ---------- | -------------------------- |
+| 人民币     | CNY、RMB、中国元、人民币、renminbi    |
+| 美元       | USD、美元、meiyuan                  |
+| 日元       | JPY、日元、riyuan                   |
+| 韩元       | KRW、韩元、hanyuan                  |
+| 港币       | HKD、港币、gangbi                   |
+| 新台币     | TWD、新台币、xintaibi                |
+| 欧元       | EUR、欧元、ouyuan                   |
+| 英镑       | GBP、英镑、yingbang                 |
+| 卢布       | RUB、卢布、lubu                     |
+| 澳元       | AUD、澳元、aoyuan                   |
 
   
 

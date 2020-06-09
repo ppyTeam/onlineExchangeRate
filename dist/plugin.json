@@ -1,7 +1,7 @@
 {
-  "pluginName": "onlineExchangeRate",
+  "pluginName": "在线货币计算器",
   "description": "一个在线获取实时汇率信息的货币计算器",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "author": "quericy",
   "contributors": ["ttionya <git@ttionya.com>"],
   "homepage": "https://quericy.me",
@@ -23,7 +23,7 @@
         {
           "type": "regex",
           "label": "人民币汇率转换",
-          "match": "/^(CNY|RMB|中国元|人民币).*/i"
+          "match": "/^(CNY|RMB|中国元|人民币|renminbi).*/i"
         }
       ]
     },
@@ -34,7 +34,7 @@
         {
           "type": "regex",
           "label": "美元汇率转换",
-          "match": "/^(USD|美元).*/i"
+          "match": "/^(USD|美元|meiyuan).*/i"
         }
       ]
     },
@@ -45,7 +45,7 @@
         {
           "type": "regex",
           "label": "日元汇率转换",
-          "match": "/^(JPY|日元).*/i"
+          "match": "/^(JPY|日元|riyuan).*/i"
         }
       ]
     },
@@ -56,7 +56,7 @@
         {
           "type": "regex",
           "label": "韩元汇率转换",
-          "match": "/^(KRW|韩元).*/i"
+          "match": "/^(KRW|韩元|hanyuan).*/i"
         }
       ]
     },
@@ -67,7 +67,7 @@
         {
           "type": "regex",
           "label": "港币汇率转换",
-          "match": "/^(HKD|港币).*/i"
+          "match": "/^(HKD|港币|gangbi).*/i"
         }
       ]
     },
@@ -78,7 +78,7 @@
         {
           "type": "regex",
           "label": "新台币汇率转换",
-          "match": "/^(TWD|新台币).*/i"
+          "match": "/^(TWD|新台币|xintaibi).*/i"
         }
       ]
     },
@@ -89,7 +89,7 @@
         {
           "type": "regex",
           "label": "欧元汇率转换",
-          "match": "/^(EUR|欧元).*/i"
+          "match": "/^(EUR|欧元|ouyuan).*/i"
         }
       ]
     },
@@ -100,7 +100,7 @@
         {
           "type": "regex",
           "label": "英镑汇率转换",
-          "match": "/^(GBP|英镑).*/i"
+          "match": "/^(GBP|英镑|yingbang).*/i"
         }
       ]
     },
@@ -111,7 +111,7 @@
         {
           "type": "regex",
           "label": "卢布汇率转换",
-          "match": "/^(RUB|卢布).*/i"
+          "match": "/^(RUB|卢布|lubu).*/i"
         }
       ]
     },
@@ -122,7 +122,7 @@
         {
           "type": "regex",
           "label": "澳元汇率转换",
-          "match": "/^(AUD|澳元).*/i"
+          "match": "/^(AUD|澳元|aoyuan).*/i"
         }
       ]
     },
@@ -133,7 +133,7 @@
         {
           "type": "regex",
           "label": "加元汇率转换",
-          "match": "/^(CAD|加元).*/i"
+          "match": "/^(CAD|加元|jiayuan).*/i"
         }
       ]
     }
